@@ -1,5 +1,5 @@
+```swift
 import UIKit
-
 class ViewController: UIViewController {
     
     var referenceForTopBar: TopBar?
@@ -20,7 +20,7 @@ extension ViewController {
             refrenceForViewTop.frame.size.width = SubView.frame.size.width
             referenceForTopBar = refrenceForViewTop
             referenceForTopBar?.title.text = "Home"
-            
         }
     }
 }
+
