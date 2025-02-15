@@ -2,7 +2,7 @@
 import UIKit
 class ViewController: UIViewController {
     
-    var referenceForTopBar: TopBar?
+    var toBar: TopBar?
     
     @IBOutlet weak var SubView: UIView!  //This is the IBOutLet in the VC where we want to have our XIB View
     
@@ -18,9 +18,10 @@ extension ViewController {
             SubView.addSubview(refrenceForViewTop)
             refrenceForViewTop.frame.size.height = SubView.frame.size.height
             refrenceForViewTop.frame.size.width = SubView.frame.size.width
-            referenceForTopBar = refrenceForViewTop
-            referenceForTopBar?.title.text = "Home"
+            topBar = refrenceForViewTop
+            topBar?.title.text = "Home"
+            
         }
     }
 }
-
+```
